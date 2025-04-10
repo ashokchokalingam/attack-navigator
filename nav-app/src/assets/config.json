@@ -1,17 +1,17 @@
 {
-	"collection_index_url": "https://raw.githubusercontent.com/mitre-attack/attack-stix-data/master/index.json",
+	"collection_index_url": "assets/data/index.json",
 
     "versions": {
 		"enabled": false,
 		"entries": [
 			{
-				"name": "Custom Data v14",
-				"version": "14",
+				"name": "Enterprise",
+				"version": "16.1",
 				"domains": [
 					{
 						"name": "Enterprise",
 						"identifier": "enterprise-attack",
-						"data": ["assets/custom-enterprise-attack.json"]
+						"data": ["assets/data/enterprise-attack-16.1.json"]
 					}
 				]
 			}
@@ -23,8 +23,8 @@
     ],
 
     "default_layers": {
-        "enabled": false,
-        "urls": ["assets/example.json", "https://raw.githubusercontent.com/mitre-attack/attack-navigator/master/layers/samples/Bear_APT.json"]
+        "enabled": true,
+        "urls": ["assets/layer.json"]
     },
 
     "comment_color": "yellow",
